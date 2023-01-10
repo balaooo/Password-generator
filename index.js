@@ -27,28 +27,3 @@ generator.addEventListener("click", function(){
 });
 
 
-console.log(result1.textContent)
-
-// let password = []
-// let result1 = document.getElementById("result1")
-// let result2 = document.getElementById("result2")
-// let generator = document.getElementById("generator")
-
-
-// for (var i = 0; i < characters.length; i++) {
-//     console.log(characters[i]);
-
-// };
-
-
-// generator.addEventListener("click", function(){
-    
-//     for(let i = 0; i < characters.length; i++){
-    
-        
-//     }
-// });
-
-// // console.log(result1)
-// // console.log(result2)
-// let randomCharacters = Math.floor(Math.random() * characters.length); //隨機選1個
