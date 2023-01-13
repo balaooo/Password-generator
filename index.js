@@ -27,3 +27,33 @@ generator.addEventListener("click", function(){
 });
 
 
+
+// Click and copy
+let copyIcon = document.getElementById("copy-icon");
+
+
+function clickCopy() {
+    const range = document.createRange();
+    // 將指定元素內容加到 Range 中
+    const texts = document.querySelectorAll('.copy-result');
+    range.selectNode(texts);
+    // 取得 Selection 物件
+    const selection = window.getSelection();
+    // 先清空當前選取範圍
+    selection.removeAllRanges();
+    // 加入 Range 
+    selection.addRange(range);
+    
+    document.execCommand('copy');
+    selection.removeAllRanges();
+};
+
+copyIcon.addEventListener("click", function copyPassword() {
+    // var copyResult = document.getElementById("copy-result");
+    // navigator.clipboard.writeText(copyResult);
+   clickCopy();
+});
+
+
+
+
